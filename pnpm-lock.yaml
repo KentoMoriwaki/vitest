@@ -109,9 +109,9 @@ importers:
       fast-glob: 3.2.11
       https-localhost: 4.7.1
       unocss: 0.39.3_vite@2.9.10
-      unplugin-vue-components: 0.19.6_vite@2.9.10+vue@3.2.37
+      unplugin-vue-components: 0.19.6_hd26raqwpnm7hl4c5jnifs3the
       vite-plugin-pwa: 0.12.0_vite@2.9.10
-      vitepress: 1.0.0-alpha.2
+      vitepress: 1.0.0-alpha.2_ohobp6rpsmerwlq5ipwfh5yigy
       workbox-window: 6.5.3
 
   examples/basic:
@@ -176,7 +176,7 @@ importers:
       vitest: workspace:*
       zustand: 4.0.0-rc.1
     dependencies:
-      '@vueuse/integrations': 8.5.0_axios@0.26.1
+      '@vueuse/integrations': 8.5.0_axios@0.26.1+vue@3.2.37
       axios: 0.26.1
       tinyspy: 0.3.2
     devDependencies:
@@ -198,7 +198,7 @@ importers:
       typescript: 4.6.3
       vitest: workspace:*
     dependencies:
-      next: 12.1.5_zpnidt7m3osuk7shl3s4oenomq
+      next: 12.1.5_ezdxe4hg7n3pawg24sxf3xmgta
       react: 18.0.0
       react-dom: 18.0.0_react@18.0.0
     devDependencies:
@@ -258,15 +258,15 @@ importers:
       vite: ^2.9.10
       vitest: workspace:*
     dependencies:
-      react: 16.14.0
-      react-dom: 16.14.0_react@16.14.0
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
     devDependencies:
       '@types/react': 17.0.45
       '@types/react-dom': 17.0.17
       '@vitejs/plugin-react': 1.3.1
       '@vitest/ui': link:../../packages/ui
       enzyme: 3.11.0
-      enzyme-adapter-react-16: 1.15.6_j6bpv5pizkyfppcg2tmva6pmii
+      enzyme-adapter-react-16: 1.15.6_7ltvq4e2railvf5uya4ffxpe2a
       vite: 2.9.10
       vitest: link:../../packages/vitest
 
@@ -301,7 +301,7 @@ importers:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       react-router-dom: 6.3.0_sfoxds7t5ydpegc3knd667wn6m
-      recharts: 2.1.10_sfoxds7t5ydpegc3knd667wn6m
+      recharts: 2.1.10_oxfzelaz5ynxsop2v2nu2h2m64
       swr: 1.3.0_react@17.0.2
     devDependencies:
       '@testing-library/jest-dom': 5.16.4
@@ -556,7 +556,7 @@ importers:
 
   packages/ui:
     specifiers:
-      '@cypress/vite-dev-server': ^2.2.3
+      '@cypress/vite-dev-server': ^3.0.0
       '@cypress/vue': ^3.1.2
       '@faker-js/faker': ^7.3.0
       '@testing-library/cypress': ^8.0.3
@@ -590,7 +590,7 @@ importers:
     dependencies:
       sirv: 2.0.2
     devDependencies:
-      '@cypress/vite-dev-server': 2.2.3_vite@2.9.10
+      '@cypress/vite-dev-server': 3.0.0
       '@cypress/vue': 3.1.2_cypress@9.7.0+vue@3.2.37
       '@faker-js/faker': 7.3.0
       '@testing-library/cypress': 8.0.3_cypress@9.7.0
@@ -2921,14 +2921,13 @@ packages:
       uuid: 8.3.2
     dev: true
 
-  /@cypress/vite-dev-server/2.2.3_vite@2.9.10:
-    resolution: {integrity: sha512-E9cPKwReweYGRsupfR6Va1R1bHv3zPb3gHG68fyQwAjG4oPORaQlgfFWiR2i1pF+tRftvNfM0O2PBuKX3IvPxg==}
-    peerDependencies:
-      vite: '>= 2.1.3'
+  /@cypress/vite-dev-server/3.0.0:
+    resolution: {integrity: sha512-BD/SvxdHb3PsxpkvnORDWsezJ4vHarRNqR5P9Fn2NYYPaS8Av5vmDMSyjUFIp0l6ltiSoPXDNLG9ZkmgWFVLEw==}
     dependencies:
-      debug: 4.3.4
-      get-port: 5.1.1
-      vite: 2.9.10
+      debug: 4.3.3
+      find-up: 6.3.0
+      local-pkg: 0.4.1
+      pathe: 0.2.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3020,14 +3019,15 @@ packages:
     resolution: {integrity: sha512-bh5IskwkkodbvC0FzSg1AxMykfDl95hebEKwxNoq4e5QaGzOXSBgW8+jnMFZ7JU4sTBiB04vZWoUSzNrPboLZA==}
     dev: true
 
-  /@docsearch/js/3.1.0:
+  /@docsearch/js/3.1.0_ohobp6rpsmerwlq5ipwfh5yigy:
     resolution: {integrity: sha512-5XSK+xbP0hcTIp54MECqxkWLs6kf7Ug4nWdxWNtx8cUpLiFNFnKXDxCb35wnyNpjukmrx7Q9DkO5tFFsmNVxng==}
     dependencies:
       '@docsearch/react': 3.1.0_ohobp6rpsmerwlq5ipwfh5yigy
-      '@types/react': 18.0.9
       preact: 10.7.2
-      react: 18.1.0
-      react-dom: 18.1.0_react@18.1.0
+    transitivePeerDependencies:
+      - '@types/react'
+      - react
+      - react-dom
     dev: true
 
   /@docsearch/react/3.1.0_ohobp6rpsmerwlq5ipwfh5yigy:
@@ -3150,8 +3150,6 @@ packages:
       '@emotion/weak-memoize': 0.2.5
       hoist-non-react-statics: 3.3.2
       react: 17.0.2
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
   /@emotion/serialize/0.11.16:
@@ -3229,8 +3227,6 @@ packages:
       '@emotion/serialize': 1.0.3
       '@emotion/utils': 1.1.0
       react: 17.0.2
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
   /@emotion/stylis/0.8.5:
@@ -7447,7 +7443,7 @@ packages:
       vue: 3.2.37
       vue-demi: 0.12.5_vue@3.2.37
 
-  /@vueuse/integrations/8.5.0_axios@0.26.1:
+  /@vueuse/integrations/8.5.0_axios@0.26.1+vue@3.2.37:
     resolution: {integrity: sha512-tZNYg5T07OacF1x4evGoRZK1BMU0ge7MqF4tzR3eJLD0EPiq4jd6+HUzCloPtMZ14wNPwaP1B8xYUyYxucPJ3w==}
     peerDependencies:
       axios: '*'
@@ -7482,10 +7478,10 @@ packages:
       '@vueuse/core': 8.5.0_vue@3.2.37
       '@vueuse/shared': 8.5.0_vue@3.2.37
       axios: 0.26.1
-      vue: 3.2.37
       vue-demi: 0.12.5_vue@3.2.37
     transitivePeerDependencies:
       - '@vue/composition-api'
+      - vue
     dev: false
 
   /@vueuse/metadata/8.5.0:
@@ -7795,7 +7791,7 @@ packages:
       symbol.prototype.description: 1.0.5
     dev: true
 
-  /airbnb-prop-types/2.16.0_react@16.14.0:
+  /airbnb-prop-types/2.16.0_react@17.0.2:
     resolution: {integrity: sha512-7WHOFolP/6cS96PhKNrslCLMYAI8yB1Pp6u6XmxozQOiZbsI5ycglZr5cHhBFfuRcQQjzCMith5ZPZdYiJCxUg==}
     peerDependencies:
       react: ^0.14 || ^15.0.0 || ^16.0.0-alpha
@@ -7808,7 +7804,7 @@ packages:
       object.entries: 1.1.5
       prop-types: 15.8.1
       prop-types-exact: 1.2.0
-      react: 16.14.0
+      react: 17.0.2
       react-is: 16.13.1
     dev: true
 
@@ -10417,6 +10413,18 @@ packages:
       supports-color: 8.1.1
     dev: true
 
+  /debug/4.3.3:
+    resolution: {integrity: sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+    dependencies:
+      ms: 2.1.2
+    dev: true
+
   /debug/4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
     engines: {node: '>=6.0'}
@@ -10932,7 +10940,7 @@ packages:
     engines: {node: '>=0.12'}
     dev: true
 
-  /enzyme-adapter-react-16/1.15.6_j6bpv5pizkyfppcg2tmva6pmii:
+  /enzyme-adapter-react-16/1.15.6_7ltvq4e2railvf5uya4ffxpe2a:
     resolution: {integrity: sha512-yFlVJCXh8T+mcQo8M6my9sPgeGzj85HSHi6Apgf1Cvq/7EL/J9+1JoJmJsRxZgyTvPMAqOEpRSu/Ii/ZpyOk0g==}
     peerDependencies:
       enzyme: ^3.0.0
@@ -10940,31 +10948,31 @@ packages:
       react-dom: ^16.0.0-0
     dependencies:
       enzyme: 3.11.0
-      enzyme-adapter-utils: 1.14.0_react@16.14.0
+      enzyme-adapter-utils: 1.14.0_react@17.0.2
       enzyme-shallow-equal: 1.0.4
       has: 1.0.3
       object.assign: 4.1.2
       object.values: 1.1.5
       prop-types: 15.8.1
-      react: 16.14.0
-      react-dom: 16.14.0_react@16.14.0
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
       react-is: 16.13.1
-      react-test-renderer: 16.14.0_react@16.14.0
+      react-test-renderer: 16.14.0_react@17.0.2
       semver: 5.7.1
     dev: true
 
-  /enzyme-adapter-utils/1.14.0_react@16.14.0:
+  /enzyme-adapter-utils/1.14.0_react@17.0.2:
     resolution: {integrity: sha512-F/z/7SeLt+reKFcb7597IThpDp0bmzcH1E9Oabqv+o01cID2/YInlqHbFl7HzWBl4h3OdZYedtwNDOmSKkk0bg==}
     peerDependencies:
       react: 0.13.x || 0.14.x || ^15.0.0-0 || ^16.0.0-0
     dependencies:
-      airbnb-prop-types: 2.16.0_react@16.14.0
+      airbnb-prop-types: 2.16.0_react@17.0.2
       function.prototype.name: 1.1.5
       has: 1.0.3
       object.assign: 4.1.2
       object.fromentries: 2.0.5
       prop-types: 15.8.1
-      react: 16.14.0
+      react: 17.0.2
       semver: 5.7.1
     dev: true
 
@@ -12561,11 +12569,6 @@ packages:
   /get-port/3.2.0:
     resolution: {integrity: sha512-x5UJKlgeUiNT8nyo/AcnwLnZuZNcSjSw0kogRB+Whd1fjjFq4B1hySFxSFWWSn4mIBzg3sRNUDFYc4g5gjPoLg==}
     engines: {node: '>=4'}
-    dev: true
-
-  /get-port/5.1.1:
-    resolution: {integrity: sha512-g/Q1aTSDOxFpchXC4i8ZWvxA1lnPqx/JHqcpIw0/LX9T8x/GBbi6YnlN5nhaKIFkT8oFsscUKgDJYxfwfS6QsQ==}
-    engines: {node: '>=8'}
     dev: true
 
   /get-stdin/4.0.1:
@@ -15802,7 +15805,7 @@ packages:
     resolution: {integrity: sha512-9iN1ka/9zmX1ZvLV9ewJYEk9h7RyRRtqdK0woXcqohu8EWIerfPUjYJPg0ULy0UqP7cslmdGc8xKDJcojlKiaw==}
     dev: true
 
-  /next/12.1.5_zpnidt7m3osuk7shl3s4oenomq:
+  /next/12.1.5_ezdxe4hg7n3pawg24sxf3xmgta:
     resolution: {integrity: sha512-YGHDpyfgCfnT5GZObsKepmRnne7Kzp7nGrac07dikhutWQug7hHg85/+sPJ4ZW5Q2pDkb+n0FnmLkmd44htIJQ==}
     engines: {node: '>=12.22.0'}
     hasBin: true
@@ -15825,7 +15828,7 @@ packages:
       postcss: 8.4.5
       react: 18.0.0
       react-dom: 18.0.0_react@18.0.0
-      styled-jsx: 5.0.1_react@18.0.0
+      styled-jsx: 5.0.1_uyynoipo3v3vrfv6si7tyrw7ku
     optionalDependencies:
       '@next/swc-android-arm-eabi': 12.1.5
       '@next/swc-android-arm64': 12.1.5
@@ -17301,17 +17304,6 @@ packages:
       - supports-color
     dev: true
 
-  /react-dom/16.14.0_react@16.14.0:
-    resolution: {integrity: sha512-1gCeQXDLoIqMgqD3IO2Ah9bnf0w9kzhwN5q4FGnHZ67hBm9yePzB5JJAIQCc8x3pFnNlwFq4RidZggNAAkzWWw==}
-    peerDependencies:
-      react: ^16.14.0
-    dependencies:
-      loose-envify: 1.4.0
-      object-assign: 4.1.1
-      prop-types: 15.8.1
-      react: 16.14.0
-      scheduler: 0.19.1
-
   /react-dom/17.0.2_react@17.0.2:
     resolution: {integrity: sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==}
     peerDependencies:
@@ -17489,14 +17481,14 @@ packages:
       refractor: 3.6.0
     dev: true
 
-  /react-test-renderer/16.14.0_react@16.14.0:
+  /react-test-renderer/16.14.0_react@17.0.2:
     resolution: {integrity: sha512-L8yPjqPE5CZO6rKsKXRO/rVPiaCOy0tQQJbC+UjPNlobl5mad59lvPjwFsQHTvL03caVDIVr9x9/OSgDe6I5Eg==}
     peerDependencies:
       react: ^16.14.0
     dependencies:
       object-assign: 4.1.1
       prop-types: 15.8.1
-      react: 16.14.0
+      react: 17.0.2
       react-is: 16.13.1
       scheduler: 0.19.1
     dev: true
@@ -17540,14 +17532,6 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: false
-
-  /react/16.14.0:
-    resolution: {integrity: sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==}
-    engines: {node: '>=0.10.0'}
-    dependencies:
-      loose-envify: 1.4.0
-      object-assign: 4.1.1
-      prop-types: 15.8.1
 
   /react/17.0.2:
     resolution: {integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==}
@@ -17662,7 +17646,7 @@ packages:
       decimal.js-light: 2.5.1
     dev: false
 
-  /recharts/2.1.10_sfoxds7t5ydpegc3knd667wn6m:
+  /recharts/2.1.10_oxfzelaz5ynxsop2v2nu2h2m64:
     resolution: {integrity: sha512-me6c8m2Gs88X/nuM2gDSTDIhpSLNMbiTrlE4Cu53hjZNegT3g3xLlTrbYSAQuBCFWuWJAZXCmEuMr6AwizLyaA==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -17675,7 +17659,6 @@ packages:
       d3-shape: 2.1.0
       eventemitter3: 4.0.7
       lodash: 4.17.21
-      prop-types: 15.8.1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       react-is: 16.13.1
@@ -17683,6 +17666,8 @@ packages:
       react-smooth: 2.0.0_oxfzelaz5ynxsop2v2nu2h2m64
       recharts-scale: 0.4.5
       reduce-css-calc: 2.1.8
+    transitivePeerDependencies:
+      - prop-types
     dev: false
 
   /redent/1.0.0:
@@ -18235,6 +18220,7 @@ packages:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
+    dev: true
 
   /scheduler/0.20.2:
     resolution: {integrity: sha512-2eWfGgAqqWFGqtdMmcL5zCMK1U8KlXv8SQFGglL3CEtd0aDVDWgeF/YoCmvln55m5zSk3J/20hTaSBeSObsQDQ==}
@@ -19160,7 +19146,7 @@ packages:
       inline-style-parser: 0.1.1
     dev: true
 
-  /styled-jsx/5.0.1_react@18.0.0:
+  /styled-jsx/5.0.1_uyynoipo3v3vrfv6si7tyrw7ku:
     resolution: {integrity: sha512-+PIZ/6Uk40mphiQJJI1202b+/dYeTVd9ZnMPR80pgiWbjIwvN2zIp4r9et0BgqBuShh48I0gttPlAXA7WVvBxw==}
     engines: {node: '>= 12.0.0'}
     peerDependencies:
@@ -19173,6 +19159,7 @@ packages:
       babel-plugin-macros:
         optional: true
     dependencies:
+      '@babel/core': 7.18.2
       react: 18.0.0
     dev: false
 
@@ -20200,38 +20187,6 @@ packages:
       - webpack
     dev: true
 
-  /unplugin-vue-components/0.19.6_vite@2.9.10+vue@3.2.37:
-    resolution: {integrity: sha512-APvrJ9Hpid1MLT0G4PWerMJgARhNw6dzz0pcCwCxaO2DR7VyvDacMqjOQNC6ukq7FSw3wzD8VH+9i3EFXwkGmw==}
-    engines: {node: '>=14'}
-    peerDependencies:
-      '@babel/parser': ^7.15.8
-      '@babel/traverse': ^7.15.4
-      vue: 2 || 3
-    peerDependenciesMeta:
-      '@babel/parser':
-        optional: true
-      '@babel/traverse':
-        optional: true
-    dependencies:
-      '@antfu/utils': 0.5.2
-      '@rollup/pluginutils': 4.2.1
-      chokidar: 3.5.3
-      debug: 4.3.4
-      fast-glob: 3.2.11
-      local-pkg: 0.4.1
-      magic-string: 0.26.2
-      minimatch: 5.0.1
-      resolve: 1.22.0
-      unplugin: 0.6.3_vite@2.9.10
-      vue: 3.2.37
-    transitivePeerDependencies:
-      - esbuild
-      - rollup
-      - supports-color
-      - vite
-      - webpack
-    dev: true
-
   /unplugin-vue2-script-setup/0.10.2_2bloa65zsoqadlob4lncrwg3um:
     resolution: {integrity: sha512-m886AZIZCXMiAbTbOPQEk+MqmtHBX3dENheFXjcHSRetwBsD0KVDBteQVD5XrSBzDdQKeKw6IU4dV+2eGcLJ0A==}
     peerDependencies:
@@ -20754,13 +20709,13 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
 
-  /vitepress/1.0.0-alpha.2:
+  /vitepress/1.0.0-alpha.2_ohobp6rpsmerwlq5ipwfh5yigy:
     resolution: {integrity: sha512-twSsmx2DI/3XgZZ8KLyRAH8RgK2Zj4kJx/kwhZhimwndYqQDrtcIaAcuV+P3FKukZ+cYtm9yt9qohz631jKx4A==}
     engines: {node: '>=14.6.0'}
     hasBin: true
     dependencies:
       '@docsearch/css': 3.1.0
-      '@docsearch/js': 3.1.0
+      '@docsearch/js': 3.1.0_ohobp6rpsmerwlq5ipwfh5yigy
       '@vitejs/plugin-vue': 2.3.3_vite@2.9.10+vue@3.2.37
       '@vue/devtools-api': 6.1.4
       '@vueuse/core': 8.7.4_vue@3.2.37
@@ -20769,8 +20724,11 @@ packages:
       vite: 2.9.10
       vue: 3.2.37
     transitivePeerDependencies:
+      - '@types/react'
       - '@vue/composition-api'
       - less
+      - react
+      - react-dom
       - sass
       - stylus
     dev: true
@@ -20942,7 +20900,7 @@ packages:
     dev: true
 
   /webidl-conversions/3.0.1:
-    resolution: {integrity: sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=}
+    resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
 
   /webidl-conversions/4.0.2:
     resolution: {integrity: sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==}
